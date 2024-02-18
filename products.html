@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+}
+
+header ul li a{
+    display: inline-block;
+    color: #0c0ce4;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <header>
+            <a href="#"><img src="./img/logo.jpeg" alt="logo" class="logo" height="100px" width="100px"></a>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="https://www.muscleblaze.com/categories/proteins?navKey=CL-1703">What's New</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="tb" >
+                <h3>Features</h3>
+                <p id="js1">
+                    Accelerate your post-workout recovery with our advanced protein formula. Packed with fast-absorbing proteins and essential amino acids, it promotes rapid muscle repair and growth, allowing you to bounce back stronger and ready to tackle your next challenge.
+                </p>
+                <br><br><br>
+                <h3>Benefits</h3>
+                <p id="js2">
+                    Unleash the power within you with MuscleMax Pro, the ultimate muscle-building protein powder. Packed with premium whey protein isolate, branched-chain amino acids (BCAAs), and essential nutrients, MuscleMax Pro is specifically engineered to help you achieve maximum gains in the gym. By fueling your muscles with the necessary nutrients they need to grow and recover faster, MuscleMax Pro supports increased muscle mass, strength, and endurance. Say goodbye to fatigue and hello to unstoppable performance with MuscleMax Pro.
+                </p>
+                <br><br><br>
+                <h3>purchasing options</h3>
+                <p id="js3">
+                    For those looking to streamline their supplement routine and enjoy continuous savings, our subscription option is the perfect choice. Simply select your preferred frequency, and we'll deliver your Protein Powder straight to your doorstep on schedule, hassle-free. Plus, subscribers enjoy exclusive perks and discounts, making it easier than ever to stay stocked up on your favorite protein powder.
+                </p>
+                <br><br><br>
+            </div>
+            <div class="imgbox">
+                <img src="./img/protein1.png" alt="Protein" class="prtn">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./img/protein1.png" alt="Protein" onclick="imgSlider('./img/protein1.png');bgt1()"></li>
+            <li><img src="./img/logo 2.webp" alt="Protein" onclick="imgSlider('./img/logo 2.webp'); bgt2()"></li>
+            <li><img src="./img/logo3.jpeg" alt="Protein" onclick="imgSlider('./img/logo3.jpeg');  bgt3()"></li>
+        </ul>
+        <ul class="lg">
+            <li><img src="./img/twitter.png" alt="Social acc"></li>
+            <li><img src="./img/instagram.png" alt="Social acc"></li>
+            <li><img src="./img/facebook.png" alt="Social acc"></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.prtn').src = anything;
+        }
+        
+        function bgt1(){
+            document.getElementById("js2").innerHTML = "Accelerate your post-workout recovery with our advanced protein formula. Packed with fast-absorbing proteins and essential amino acids, it promotes rapid muscle repair and growth, allowing you to bounce back stronger and ready to tackle your next challenge."
+            document.getElementById("js1").innerHTML = "Unleash the power within you with MuscleMax Pro, the ultimate muscle-building protein powder. Packed with premium whey protein isolate, branched-chain amino acids (BCAAs), and essential nutrients, MuscleMax Pro is specifically engineered to help you achieve maximum gains in the gym. By fueling your muscles with the necessary nutrients they need to grow and recover faster, MuscleMax Pro supports increased muscle mass, strength, and endurance. Say goodbye to fatigue and hello to unstoppable performance with MuscleMax Pro."
+            document.getElementById("js3").innerHTML = "For those looking to streamline their supplement routine and enjoy continuous savings, our subscription option is the perfect choice. Simply select your preferred frequency, and we'll deliver your Protein Powder straight to your doorstep on schedule, hassle-free. Plus, subscribers enjoy exclusive perks and discounts, making it easier than ever to stay stocked up on your favorite protein powder."
+        }
+        function bgt2(){
+            document.getElementById("js2").innerHTML = "Experience the power of pure protein with PureGain Elite. Crafted with 100% whey isolate, our premium formula delivers 25g of protein per serving with zero fillers or additives. Perfect for those seeking lean muscle growth and fast recovery, PureGain Elite is easily absorbed and digested. Say goodbye to excess calories and hello to pure gains with PureGain Elite."
+            document.getElementById("js1").innerHTML = "Say goodbye to post-workout soreness and hello to rapid muscle recovery with RecoverX. Our unique protein powder blend is specially formulated to accelerate the recovery process, allowing you to bounce back stronger after even the toughest workouts. Featuring a potent combination of whey protein hydrolysate, glutamine, and antioxidants, RecoverX replenishes lost nutrients."
+            document.getElementById("js3").innerHTML = "Need an extra kick to power through your workouts? Our Energy Boost protein powder is here to deliver sustained energy and focus. Infused with energizing ingredients like caffeine and BCAAs, it's your ultimate pre-workout fuel. Purchase options include:\n Single Canister (1lb or 2lb) \n Variety Pack (Includes different flavors)\n Gift Set (Ideal for gifting to fitness enthusiasts)"
+        }
+        function bgt3(){
+            document.getElementById("js2").innerHTML = "Revitalize your body and mind with RecoverX Plus, the plant-powered protein powder designed for peak performance. Our innovative blend combines pea protein, brown rice protein, and quinoa for a complete amino acid profile that supports muscle repair and replenishment. With added BCAAs and antioxidants, RecoverX Plus accelerates recovery and reduces inflammation, so you can bounce back stronger after every workout."
+            document.getElementById("js1").innerHTML = "Fuel your active lifestyle and stay energized throughout the day with EnerGize. This versatile protein powder is perfect for anyone looking to maintain their energy levels and support their overall health and well-being. With a balanced blend of protein, vitamins, and minerals, EnerGize provides sustained energy to fuel your workouts, hikes, or busy days at work. Plus, with its delicious flavors and smooth texture, EnerGize makes it easy to enjoy a nutritious boost anytime, anywhere. Stay fueled, stay focused, and live life to the fullest with EnerGize."
+            document.getElementById("js3").innerHTML = " If you're looking to trim down while maintaining muscle mass, our Lean & Clean protein powder is your perfect companion. Formulated with a blend of protein sources and metabolism-boosting ingredients, it helps support lean muscle development and promotes fat loss. Purchase options include:    Single Canister (1lb or 2lb) Starter Kit (Includes shaker bottle and single canister)"
+        }
+
+
+
+    </script>
+</body>
+</html>
